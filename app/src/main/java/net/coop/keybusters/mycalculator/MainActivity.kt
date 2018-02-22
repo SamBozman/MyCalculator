@@ -11,11 +11,14 @@ import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity()  {
-    private val TAG = "calc"
+
+    lateinit var cal: Calculator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_main)
+        cal = Calculator (this)
+
     }
 
     // android:onClick="buttonHandler" in XML design file
