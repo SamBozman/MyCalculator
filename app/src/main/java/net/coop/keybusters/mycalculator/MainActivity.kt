@@ -11,7 +11,7 @@ import android.widget.Toast
 
 
 class MainActivity : AppCompatActivity()  {
-
+    var utils = Utils()
     lateinit var cal: Calculator
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,17 +23,16 @@ class MainActivity : AppCompatActivity()  {
 
     // android:onClick="buttonHandler" in XML design file
     fun buttonHandler(v: View) {
-        val i:Int = v.id
         val resourceName:String = v.getResources().getResourceEntryName(v.getId())
-
-        showToastMessage("String is  $resourceName",this)
+        cal.processButtonClick(resourceName)
+        utils.showToast("Testing MainActivity",this)
 
     }
 
 
-    fun showToastMessage(value: String, context: Context) {
-        Toast.makeText(applicationContext, value, Toast.LENGTH_SHORT).show()
-    }
+//    fun showToastMessage(value: String, context: Context) {
+//        Toast.makeText(applicationContext, value, Toast.LENGTH_SHORT).show()
+//    }
 
 
 
