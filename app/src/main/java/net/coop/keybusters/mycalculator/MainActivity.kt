@@ -24,8 +24,9 @@ class MainActivity : AppCompatActivity()  {
     // android:onClick="buttonHandler" in XML design file
     fun buttonHandler(v: View) {
         val i:Int = v.id
+        val resourceName:String = v.getResources().getResourceEntryName(v.getId())
 
-        showToastMessage("hello + $i",this)
+        showToastMessage("String is  $resourceName",this)
 
     }
 

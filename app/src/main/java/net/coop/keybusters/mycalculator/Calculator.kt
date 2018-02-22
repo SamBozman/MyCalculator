@@ -5,7 +5,7 @@ import android.content.Context
  */
 class Calculator(val context: Context) {
 
-    private val calButtons = arrayOf("b0","b1","b2","b3","b4","b5","b6","b7","b8", "b9",
+    private val calButtons = arrayOf("b0","b1","b2","b3","b4","b5","b6","b7","b8","b9",
             "formula","result","fraction","difract","numerator",
             "denominator","TBA","power","root","clear",
             "divide","multiply","minus","decimal","equals","plus","help")
