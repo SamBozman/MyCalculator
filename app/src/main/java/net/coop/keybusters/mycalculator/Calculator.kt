@@ -5,9 +5,22 @@ import android.content.Context
  */
 class Calculator(val context: Context) {
 
-    fun double(x: Int): Int {
-        return 2 * x
+    private val calButtons = arrayOf("b0","b1","b2","b3","b4","b5","b6","b7","b8", "b9",
+            "formula","result","fraction","difract","numerator",
+            "denominator","TBA","power","root","clear",
+            "divide","multiply","minus","decimal","equals","plus","help")
+
+
+
+
+    fun processButtonClick(butID: Int): String{
+       var result = butID.toString() + "test"
+
+        return  result
     }
+
+
+
 }
 
 

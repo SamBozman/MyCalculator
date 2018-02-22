@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity()  {
 
     // android:onClick="buttonHandler" in XML design file
     fun buttonHandler(v: View) {
-        val i = v.id
+        val i:Int = v.id
+
         showToastMessage("hello + $i",this)
 
     }
